@@ -1,0 +1,213 @@
+html {
+	background-color: black;
+	font-family: Helvetica;
+	color: seashell;
+	font-size: 22px;
+	opacity: 0.9;
+	text-align: center;
+	line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	margin-top: 70px;
+}
+
+
+/*Header*/
+
+header {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+	height: 69px;
+	width: 100%;
+	border-bottom: 1px solid seashell;
+	position: fixed;
+	z-index: 1;
+}
+
+#logo {
+	display: flex;
+	align-self: center;
+	margin-left: 10px;
+}
+
+#logo img {
+	height: 50px;
+	width: auto;
+}
+
+nav {
+	min-width: 400px;
+
+}
+
+nav ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 0;
+	margin-right: 10px;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav a {
+	color: seashell;
+}
+
+@media only screen and (max-width: 800px) {
+
+	header {
+		display: flex;
+		align-content: center;
+		height: 120px;
+	}
+	#logo {
+		width: 100%;
+	}
+
+	#logo img {
+
+	}
+
+	nav ul {
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0 10px;
+	}
+}
+
+
+/*Mission*/
+#mission {
+	height: 700px;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+	display: flex;
+	align-items: center;
+
+}
+
+#mission-statment {
+	background-color: black;
+	width: 100%;
+	padding: 10px;
+}
+
+#mission h1, h4 {
+	padding: 10px;
+}
+
+/*Items*/
+
+#items {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item img{
+	height: 200px;
+	width: 300px;
+	margin: 10px 10px;
+}
+
+.item h4 {
+	padding: 0;
+}
+
+.item {
+	margin: 10px 0;
+}
+
+
+/*Locations*/
+
+#locations {
+	height: 500px;
+	max-width: 1200px;
+	margin: 70px auto;
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	padding-top: 100px;
+}
+
+#locations-box {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-content: center;
+}
+
+.location {
+	background-color: black;
+	width: 300px;
+	height: 300px;
+	opacity: 1;
+	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+	#locations {
+		height: 500px;
+		max-width: 1200px;
+		padding-top: 10px;
+	}
+	#locations-box {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.location {
+		height: 200px;
+		width: 200px;
+		margin: 5px 10px;
+	}
+}
+
+
+/*Footer*/
+
+footer {
+	height: 200px;
+	width: 100%;
+	
+
+}
+
+#copyright {
+	text-align: left;
+	margin-left: 20px;
+	
+}
+
+#copyright p {
+	font-size: 0.75rem;
+}
