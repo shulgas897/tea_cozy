@@ -117,6 +117,12 @@ nav a {
 	padding: 10px;
 }
 
+#signature {
+	color: aquamarine;
+	font-style: italic;
+	font-size: 0.75rem;
+}
+
 /*Items*/
 
 #items {
@@ -211,3 +217,4 @@ footer {
 #copyright p {
 	font-size: 0.75rem;
 }
+
